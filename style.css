@@ -184,8 +184,13 @@ main>article>section>div a:hover {
     color: #0150DA;
 }
 
-main>article:nth-child(2) {
-    border: 1px solid cornflowerblue;
+main>article:nth-child(2)  a:hover>img {
+    content: url(images/read_more_blue.png) no-repeat;
+}
+
+main>article:nth-child(2)  a >img {
+    padding-right: 4px;  
+    background-image: url(images/read_more_yellow.png) no-repeat;  
 }
 
 main>article:nth-child(2)>section>div {
