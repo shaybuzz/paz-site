@@ -1,51 +1,48 @@
-body{
+body {
     direction: rtl;
 }
 
-.border{
+.border {
     border: 1px solid red;
 }
 
-main, footer, header{
+main, footer, header {
     border: 1px solid red;
-
 }
 
-body{
+body {
     margin: 0;
 }
 
 * {
     box-sizing: border-box;
-  }
+}
 
-  header   {
-      height: 130px;
+header {
+    height: 130px;
     background-image: url("images/header_bg.png");
     background-repeat: repeat-x;
-  }
+}
 
-  header > div{
-      width: fit-content;
-      margin: auto;
-  }
+header>div {
+    width: fit-content;
+    margin: auto;
+}
 
-  img.logo{
-      position: relative;
-      top: 30px;
-  }
+img.logo {
+    position: relative;
+    top: 30px;
+}
 
+main>article>section {
+    margin: 7px;
+}
 
-  
-  main > article > section{
-      margin: 7px;
-  }
+main>article>section>div {
+    position: relative;
+}
 
-  main > article > section > div {
-      position: relative;
-  }
-
-  main > article > section > div > span {
+main>article>section>div>span {
     position: absolute;
     background-color: gray;
     border-radius: 0 0 20px 0;
@@ -60,27 +57,27 @@ body{
     line-height: 1;
 }
 
-main > article:first-child > section > div > img+img {
+main>article:first-child>section>div>img+img {
     position: absolute;
     left: 0;
 }
 
-.pos-absolute{
+.pos-absolute {
     position: absolute;
     right: 0;
     top: 0;
 }
 
-main > article > section:nth-child(2) > div > span{
+main>article>section:nth-child(2)>div>span {
     width: 80%;
 }
 
-main > article > section > div > span > p{
+main>article>section>div>span>p {
     margin: 6px;
     margin-top: 4px;
 }
 
-main > article > section > div > span > h3{
+main>article>section>div>span>h3 {
     margin-right: 6px;
     margin-top: 4px;
     margin-bottom: 0px;
@@ -88,91 +85,85 @@ main > article > section > div > span > h3{
     width: fit-content;
 }
 
-main > article > section > div > span > a {
+main>article>section>div>span>a {
     width: fit-content;
     position: relative;
     right: 75%;
     bottom: 5px;
 }
 
-
-main > article > section > div > span > a {
+main>article>section>div>span>a {
     color: white;
 }
 
-main > article > section > div a:hover {
+main>article>section>div a:hover {
     color: blue;
 }
 
-main > article:nth-child(2){
+main>article:nth-child(2) {
     border: 1px solid cornflowerblue;
 }
 
-
-
-main > article:nth-child(2)> section > div{
-   position: relative;
+main>article:nth-child(2)>section>div {
+    position: relative;
 }
 
-main > article:nth-child(2)> section > div> h3{
+main>article:nth-child(2)>section>div>h3 {
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     top: 0;
     right: 25px;
- }
+}
 
- main > article:nth-child(2)> section > div> a{
+main>article:nth-child(2)>section>div>a {
     position: absolute;
     bottom: 25px;
     left: 25px;
- }
+}
 
- main > article:nth-child(2)> section a{
+main>article:nth-child(2)>section a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
- }
+}
 
- main > article:nth-child(2)> section > div> img.advertisement{
+main>article:nth-child(2)>section>div>img.advertisement {
     position: absolute;
     right: 20px;
     top: 50px;
- }
+}
 
- main > article:nth-child(2)> section > div> ul{
+main>article:nth-child(2)>section>div>ul {
     position: absolute;
     list-style-type: none;
     padding: 25px;
     top: 10px;
- }
- main > article:nth-child(2)> section > div> ul > li{
-   margin: 5px;
- }
- 
- 
- 
- main > article:nth-child(2)> section > div> img.map{
+}
+
+main>article:nth-child(2)>section>div>ul>li {
+    margin: 5px;
+}
+
+main>article:nth-child(2)>section>div>img.map {
     position: absolute;
     left: 20px;
     top: 40px;
- }
+}
 
-footer{
+footer {
     position: absolute;
     height: 50px;
     bottom: 0;
     width: 100%;
 }
 
-footer > div{
+footer>div {
     width: 50px;
     background-color: tomato;
     margin: auto;
 }
 
-
-  
-  .flex-container {
+.flex-container {
     display: flex;
     justify-content: center;
-  }
+}
