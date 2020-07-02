@@ -10,10 +10,6 @@ body {
     box-sizing: border-box;
 }
 
-nav.flex-container>img:first-child {
-    border: red 1px solid;
-}
-
 nav>section {
     position: relative;
 }
@@ -119,7 +115,7 @@ header a {
 
 header a:hover {
     color: #0150DA;
-    text-decoration: underline 0150DA;
+    text-decoration: underline #0150DA;
 }
 
 main>article>section {
