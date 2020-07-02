@@ -2,10 +2,6 @@ body {
     direction: rtl;
 }
 
-.border {
-    border: 1px solid red;
-}
-
 main, footer, header {
     border: 1px solid red;
 }
@@ -19,37 +15,49 @@ body {
 }
 
 header {
-    height: 130px;
+    height: 110px;
     background-image: url("images/header_bg.png");
     background-repeat: repeat-x;
+    border: teal 2px solid;
+    margin-bottom: 50px;
 }
 
-header{
+header> div> aside{
+    margin-top: 20px;
+    width: fit-content;
+    display: flex;
+}
+
+
+header>div{
+    width: 900px;
+    margin: auto;
     position: relative;
 }
 
-header>img{
-    position: absolute;
-    right: 420px;
-    top: 30px;
-}
-
-header>div {
-    width: 900px;
-    margin: auto;
+header nav.flex-container{
+    margin-top: 55px;
+    margin-right: 120px;
     display: flex;
-    flex-direction: column;
-    border: 1px solid white;
-    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header>div>nav{
-    margin-top: 25px;
-    margin-right: 90px;
-}
-
-header>div>aside {
+header aside > div{
+    position: absolute;
+    left: 0px;
     direction: ltr;
+    display: flex;
+}
+
+ aside > div{
+    align-items: center;
+}
+
+header>div>img{
+    position: absolute;
+    right: -20px;
+    bottom: -30px;
 }
 
 form>input {
@@ -76,35 +84,6 @@ header a:hover{
     color: blue;
     text-decoration: underline blue;
 }
-
-form>img {
-    margin-top: 5px;
-}
-
-
-header>div>aside {
-    width: fit-content;
-    align-self: flex-end;
-}
-
-header>div>aside form {
-    display: inline;
-}
-
-
-header>div>nav>div{
-    border: springgreen 1px solid;
-    display: flex;
-    justify-content: space-between;
-}
-
-header>div>nav>div>a{
-   border: blue 1px solid;
-}
-header>div>nav>div>img{
-    border: blue 1px solid;
- }
-
 
 
 main>article>section {
