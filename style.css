@@ -14,6 +14,49 @@ body {
     box-sizing: border-box;
 }
 
+nav.flex-container>img:first-child {
+    border: red 1px solid;
+}
+
+
+nav>section {
+    position: relative;
+}
+
+header nav>section>a+span {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    top: 30px;
+    width: max-content;
+    visibility: hidden;
+}
+
+nav>section>a:hover+span {
+    visibility: visible;
+}
+
+nav>section>span>a {
+    background-color: #909090;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    display: inline;
+}
+
+nav>section>span>a:hover {
+    background-color: #bcbcbc;
+}
+
+nav>section>span>a:first-child {
+    background-image: url("images/menu_dropdown_bg.png");
+}
+
+nav>section>span>a:first-child:hover {
+    background-image: none;
+}
+
 header {
     height: 110px;
     background-image: url("images/header_bg.png");
@@ -22,20 +65,19 @@ header {
     margin-bottom: 50px;
 }
 
-header> div> aside{
+header>div>aside {
     margin-top: 20px;
     width: fit-content;
     display: flex;
 }
 
-
-header>div{
+header>div {
     width: 900px;
     margin: auto;
     position: relative;
 }
 
-header nav.flex-container{
+header nav.flex-container {
     margin-top: 55px;
     margin-right: 120px;
     display: flex;
@@ -43,25 +85,25 @@ header nav.flex-container{
     align-items: center;
 }
 
-header aside > div{
+header aside>div {
     position: absolute;
     left: 0px;
     direction: ltr;
     display: flex;
 }
 
- aside > div{
+aside>div {
     align-items: center;
 }
 
-header>div>img{
+header>div>img {
     position: absolute;
     right: -20px;
     bottom: -30px;
 }
 
 form>input {
-    background:url(images/search_input.png) no-repeat; 
+    background: url(images/search_input.png) no-repeat;
     direction: rtl;
     border: none;
     width: 130px;
@@ -72,19 +114,19 @@ form>input {
     left: -4px;
 }
 
-header a{
-    font-size: 12px;
+header a {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
     text-decoration: none;
     position: relative;
 }
 
-header a:hover{
-    color: blue;
-    text-decoration: underline blue;
+header a:hover {
+    color: #0150DA;
+    text-decoration: underline 0150DA;
 }
-
 
 main>article>section {
     margin: 7px;
@@ -149,7 +191,7 @@ main>article>section>div>span>a {
 }
 
 main>article>section>div a:hover {
-    color: blue;
+    color: #0150DA;
 }
 
 main>article:nth-child(2) {
