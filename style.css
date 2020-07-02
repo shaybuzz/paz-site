@@ -24,6 +24,16 @@ header {
     background-repeat: repeat-x;
 }
 
+header{
+    position: relative;
+}
+
+header>img{
+    position: absolute;
+    right: 420px;
+    top: 30px;
+}
+
 header>div {
     width: 900px;
     margin: auto;
@@ -31,6 +41,11 @@ header>div {
     flex-direction: column;
     border: 1px solid white;
     margin-top: 20px;
+}
+
+header>div>nav{
+    margin-top: 25px;
+    margin-right: 90px;
 }
 
 header>div>aside {
@@ -49,23 +64,17 @@ form>input {
     left: -4px;
 }
 
-aside>div>a{
+header a{
     font-size: 12px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    bottom: 4px;
     text-decoration: none;
     position: relative;
 }
 
-aside>div>a:hover{
+header a:hover{
     color: blue;
     text-decoration: underline blue;
-}
-
-
-form>input:focus {
-    border: 1px blue solid;
 }
 
 form>img {
@@ -81,6 +90,22 @@ header>div>aside {
 header>div>aside form {
     display: inline;
 }
+
+
+header>div>nav>div{
+    border: springgreen 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+header>div>nav>div>a{
+   border: blue 1px solid;
+}
+header>div>nav>div>img{
+    border: blue 1px solid;
+ }
+
+
 
 main>article>section {
     margin: 7px;
