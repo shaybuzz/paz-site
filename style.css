@@ -1,44 +1,112 @@
 body {
     direction: rtl;
-}
-
-.border {
-    border: 1px solid red;
-}
-
-main, footer, header {
-    border: 1px solid red;
-}
-
-body {
     margin: 0;
+}
+
+.margin-top-right {
+    position: relative;
+    top: 2px;
+    right: 3px;
+}
+
+.margin-top {
+    position: relative;
+    top: 2px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
 }
 
 * {
     box-sizing: border-box;
 }
 
+nav>section {
+    position: relative;
+}
+
+header nav>section>a+span {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    top: 28px;
+    width: max-content;
+    visibility: hidden;
+}
+
+nav>section>a:hover+span {
+    visibility: visible;
+}
+
+nav>section>span>a {
+    background-color: #909090;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    display: inline;
+}
+
+nav>section>span>a:hover {
+    background-color: #bcbcbc;
+}
+
+nav>section>span>a:first-child {
+    background-image: url("images/menu_dropdown_bg.png");
+}
+
+nav>section>span>a:first-child:hover {
+    background-image: none;
+}
+
 header {
-    height: 130px;
+    height: 110px;
     background-image: url("images/header_bg.png");
     background-repeat: repeat-x;
+    margin-bottom: 20px;
+}
+
+header>div>aside {
+    width: fit-content;
+    padding-top: 20px;
+    display: flex;
 }
 
 header>div {
     width: 900px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid white;
-    margin-top: 20px;
+    position: relative;
 }
 
-header>div>aside {
+header nav.flex-container {
+    margin-top: 50px;
+    display: flex;
+    margin-right: 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header aside>div {
+    position: absolute;
+    left: 0px;
     direction: ltr;
+    display: flex;
+}
+
+aside>div {
+    align-items: center;
+}
+
+header>div>img {
+    position: absolute;
+    right: -20px;
+    bottom: -30px;
 }
 
 form>input {
-    background:url(images/search_input.png) no-repeat; 
+    background: url(images/search_input.png) no-repeat;
     direction: rtl;
     border: none;
     width: 130px;
@@ -49,37 +117,18 @@ form>input {
     left: -4px;
 }
 
-aside>div>a{
-    font-size: 12px;
+header a {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    bottom: 4px;
+    font-size: 15px;
+    font-weight: bold;
     text-decoration: none;
     position: relative;
 }
 
-aside>div>a:hover{
-    color: blue;
-    text-decoration: underline blue;
-}
-
-
-form>input:focus {
-    border: 1px blue solid;
-}
-
-form>img {
-    margin-top: 5px;
-}
-
-
-header>div>aside {
-    width: fit-content;
-    align-self: flex-end;
-}
-
-header>div>aside form {
-    display: inline;
+header a:hover {
+    color: #0150DA;
+    text-decoration: underline #0150DA;
 }
 
 main>article>section {
@@ -92,7 +141,7 @@ main>article>section>div {
 
 main>article>section>div>span {
     position: absolute;
-    background-color: rgba(133, 131, 131, 0.8);
+    background-color: rgba(133, 131, 131, 0.7);
     border-radius: 0 0 20px 0;
     color: white;
     bottom: 10px;
@@ -145,11 +194,16 @@ main>article>section>div>span>a {
 }
 
 main>article>section>div a:hover {
-    color: blue;
+    color: #0150DA;
 }
 
-main>article:nth-child(2) {
-    border: 1px solid cornflowerblue;
+main>article:nth-child(2) a:hover>img {
+    content: url(images/read_more_blue.png) no-repeat;
+}
+
+main>article:nth-child(2) a>img {
+    padding-right: 4px;
+    background-image: url(images/read_more_yellow.png) no-repeat;
 }
 
 main>article:nth-child(2)>section>div {
@@ -199,19 +253,44 @@ main>article:nth-child(2)>section>div>img.map {
 }
 
 footer {
-    position: absolute;
-    height: 50px;
+    position: fixed;
+    background-image: url(images/footer_bg.png);
     bottom: 0;
     width: 100%;
+    height: 35px;
 }
 
 footer>div {
-    width: 50px;
-    background-color: tomato;
+    width: 900px;
     margin: auto;
 }
 
-.flex-container {
+footer>div>ul {
+    margin-top: 5px;
+    padding: 0;
     display: flex;
-    justify-content: center;
+    list-style: none;
+    justify-content: right;
+    align-items: center;
+    color: white;
+}
+
+footer>div>ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer>div>ul a:hover {
+    text-decoration: underline;
+    color: #0150DA;
+}
+
+footer>div>ul li {
+    padding: 4px;
+}
+
+footer>div>ul li:last-child>a {
+    color: red;
 }
