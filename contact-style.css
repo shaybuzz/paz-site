@@ -11,8 +11,15 @@ body > main{
     display: flex;
 }
 
+main>div.nav>div{
+    background-image: url(images/side_menu_sprite);
+    display: block;
+    height: 35px;
+    width: 120px;
+}
+
 main > div.nav{
-    width: 10%;
+    width: 120px;
     background-color: wheat;
 }
 
