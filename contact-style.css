@@ -4,42 +4,90 @@ body {
     background-color: aquamarine;
 }
 
-body > main{
+body>main {
     background-color: teal;
     width: 900px;
     margin: auto;
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-main>div.nav>div{
+main>div.nav>span {
     background-image: url(images/side_menu_sprite);
     display: block;
     height: 35px;
     width: 120px;
 }
 
-main > div.nav{
+main>div.nav {
     width: 120px;
     background-color: wheat;
+
 }
 
-main>div.main-form>div.delim{
+main a {
+    text-decoration: none;
+    color: black;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+main>div.nav>span>a {
+    position: relative;
+    top: 5px;
+    right: 20px;
+    font-size: 13px;
+}
+
+main>div.main-form>div.delim {
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-image: url("images/menu_dropdown_sep.png");
 }
 
-main > div.main-form{
+main>div.main-form {
     width: 50%;
     background-color: rgb(37, 128, 34);
 }
 
-main > div.info{
-    width: 40%;
-    background-color: rgb(107, 120, 222);
+main>div.main-form>nav {
+    font-size: 12px;
 }
 
-main>div>article{
+main>div.main-form>p {
+   margin-bottom: 5px;
+   margin-top: 25px;
+}
+
+
+main>div.info {
+    width: 35%;
+    background-color: rgb(107, 120, 222);
+    padding-top: 60px;
+}
+
+
+main>div.info>div.info-container{
+    position: relative;
+}
+
+main>div.info>div.info-container>div.details{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 14px;
+    right: 20px;
+}
+
+main>div.info>div.info-container:nth-child(2){
+    margin-top: 25px;
+}
+
+
+main>div>article {
     margin-top: 10px;
 }
 
@@ -62,7 +110,7 @@ form {
     margin-left: 40px;
 }
 
-h4 {
+ h3 {
     font-size: 15px;
     margin: 0;
     color: blue;
@@ -91,7 +139,8 @@ form button:hover {
 form>div {
     display: flex;
 }
-form>div:last-child{
+
+form>div:last-child {
     flex-direction: column;
     align-items: flex-end;
 }
