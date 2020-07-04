@@ -315,6 +315,7 @@ footer>div>ul li {
 footer>div>ul li:last-child>a {
     color: red;
 }
+
 footer>div>ul li:last-child>a:hover {
     color: #0150DA;
 }
