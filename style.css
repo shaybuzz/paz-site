@@ -23,6 +23,27 @@ body {
     box-sizing: border-box;
 }
 
+main>article:first-child a>div.nextImage {
+    background-image: url(images/read_more_white.png);
+}
+
+main>article a:hover>div.nextImage {
+    background-image: url(images/read_more_blue.png);
+}
+
+main a>div.nextImage {
+    background-image: url(images/read_more_yellow.png);
+}
+
+a>div.nextImage {
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    position: relative;
+    right: 4px;
+    top: 2px;
+}
+
 nav>section {
     position: relative;
 }
@@ -185,8 +206,8 @@ main>article>section>div>span>h3 {
 main>article>section>div>span>a {
     width: fit-content;
     position: relative;
-    right: 75%;
-    bottom: 5px;
+    right: 72%;
+    bottom: 7px;
 }
 
 main>article>section>div>span>a {
