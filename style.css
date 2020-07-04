@@ -1,3 +1,9 @@
+:root {
+    --blue: #005ca0;
+    --black: #6d6d6d;
+    color: var(--black);
+}
+
 body {
     direction: rtl;
     margin: 0;
@@ -148,8 +154,8 @@ header a {
 }
 
 header a:hover {
-    color: #0150DA;
-    text-decoration: underline #0150DA;
+    color: var(--blue);
+    text-decoration: underline var(--blue);
 }
 
 main>article>section {
@@ -215,7 +221,7 @@ main>article>section>div>span>a {
 }
 
 main>article>section>div a:hover {
-    color: #0150DA;
+    color: var(--blue);
 }
 
 main>article:nth-child(2) a:hover>img {
@@ -305,7 +311,7 @@ footer>div>ul a {
 
 footer>div>ul a:hover {
     text-decoration: underline;
-    color: #0150DA;
+    color: var(--blue);
 }
 
 footer>div>ul li {
@@ -317,5 +323,5 @@ footer>div>ul li:last-child>a {
 }
 
 footer>div>ul li:last-child>a:hover {
-    color: #0150DA;
+    color: var(--blue);
 }
