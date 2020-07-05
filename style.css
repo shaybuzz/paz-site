@@ -54,19 +54,21 @@ nav>section {
     position: relative;
 }
 
-header nav>section>a+span {
+header nav>section> span {
     position: absolute;
     z-index: 10;
     display: flex;
     flex-direction: column;
-    top: 28px;
+    top: 18px;
     width: max-content;
     visibility: hidden;
 }
 
-nav>section>a:hover+span {
+nav>section:hover> span {
     visibility: visible;
 }
+
+
 
 nav>section>span>a {
     background-color: #909090;
