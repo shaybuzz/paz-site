@@ -59,7 +59,14 @@ article>nav>ul>li:hover>div.sub-menu {
 article>nav>ul>li>div.sub-menu>a {
     display: block;
     text-align: right;
+    padding: 5px;
 }
+
+article>nav>ul>li>div.sub-menu>a:first-child{
+    background: linear-gradient(0deg, rgba(142,144,145,1) 0%, rgba(171,171,171,1) 100%);
+}
+
+
 
 article>nav>ul>li>div.sub-menu>a:hover {
     background-color: #bcbcbc;
