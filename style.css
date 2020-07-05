@@ -88,34 +88,34 @@ header a:hover {
     text-decoration: underline var(--blue);
 }
 
-nav {
+header>div>nav {
     margin-top: 50px;
     font-size: 15px;
 }
 
-nav>ul {
+header>div>nav>ul {
     width: 915px;
     list-style: none;
     display: flex;
     padding-right: 130px;
 }
 
-nav>ul>li {
+header>div>nav>ul>li {
     padding-bottom: 18px;
     position: relative;
 }
 
-nav>ul>li:nth-child(odd) {
+header>div>nav>ul>li:nth-child(odd) {
     flex-grow: 1;
     text-align: center;
 }
 
-nav>ul>li>img {
+header>div>nav>ul>li>img {
     position: relative;
     top: 2px;
 }
 
-nav>ul>li>div.sub-menu {
+header>div>nav>ul>li>div.sub-menu {
     background-color: #909090;
     position: absolute;
     top: 35px;
@@ -124,21 +124,21 @@ nav>ul>li>div.sub-menu {
     box-shadow: -8px 7px 26px -8px rgba(0, 0, 0, 0.65);
 }
 
-nav>ul>li:hover>div.sub-menu {
+header>div>nav>ul>li:hover>div.sub-menu {
     visibility: visible;
 }
 
-nav>ul>li>div.sub-menu>a {
+header>div>nav>ul>li>div.sub-menu>a {
     display: block;
     text-align: right;
     padding: 5px;
 }
 
-nav>ul>li>div.sub-menu>a:first-child {
+header>div>nav>ul>li>div.sub-menu>a:first-child {
     background: linear-gradient(0deg, rgba(142, 144, 145, 1) 0%, rgba(171, 171, 171, 1) 100%);
 }
 
-nav>ul>li>div.sub-menu>a:hover {
+header>div>nav>ul>li>div.sub-menu>a:hover {
     background: #bcbcbc
 }
 
