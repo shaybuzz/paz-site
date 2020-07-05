@@ -16,93 +16,93 @@ body>main {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h3 {
+main.contact h3 {
     font-size: 15px;
     margin: 0;
     color: var(--blue);
 }
 
-a {
+main.contact a {
     text-decoration: none;
     color: black;
 }
 
-p.bold {
+main.contact p.bold {
     font-weight: bold;
     font-size: 15px;
 }
 
-a:hover {
+main.contact a:hover {
     text-decoration: underline;
     color: var(--blue);
     ;
 }
 
-div.container {
+main.contact div.container {
     width: fit-content;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
 }
 
-div.contact-data {
+main.contact div.contact-data {
     position: absolute;
     top: -7px;
     right: 0;
     margin: 20px;
 }
 
-main>div>article {
+main.contact>div>article {
     margin-top: 10px;
 }
 
-main>div.nav {
+main.contact>div.nav {
     width: 15%;
 }
 
-main>div.nav>span {
-    background-image: url(images/side_menu_sprite);
+main.contact>div.nav>span {
+    background-image: url("images/side_menu_sprite.jpg");
     display: block;
     height: 40px;
     width: 120px;
 }
 
-main>div.nav>span>a {
+main.contact>div.nav>span>a {
     position: relative;
     top: 5px;
     right: 20px;
     font-size: 13px;
 }
 
-main>div.main-form {
+main.contact>div.main-form {
     width: 50%;
 }
 
-main>div.main-form>nav {
+main.contact>div.main-form>nav {
     font-size: 12px;
 }
 
-main>div.main-form>div.delim {
+main.contact>div.main-form>div.delim {
     width: 100%;
     height: 1px;
     background-image: url("images/menu_dropdown_sep.png");
 }
 
-main>div.main-form>p {
+main.contact>div.main-form>p {
     margin-bottom: 5px;
     margin-top: 25px;
 }
 
-main>div.info {
+main.contact>div.info {
     width: 35%;
     padding-top: 60px;
 }
 
-main>div.info>div.info-container {
+main.contact>div.info>div.info-container {
     position: relative;
 }
 
-main>div.info>div.info-container>div.details {
+main.contact>div.info>div.info-container>div.details {
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
@@ -111,53 +111,53 @@ main>div.info>div.info-container>div.details {
     line-height: 2px;
 }
 
-main>div.info>div.info-container>div.details>p>a {
+main.contact>div.info>div.info-container>div.details>p>a {
     color: blue;
 }
 
-main>div.info>div.info-container:nth-child(2) {
+main.contact>div.info>div.info-container:nth-child(2) {
     margin-top: 25px;
 }
 
-main>div.info>div.info-container>div.details>p:first-of-type {
+main.contact>div.info>div.info-container>div.details>p:first-of-type {
     margin-top: 25px;
     font-weight: bolder;
 }
 
-form {
+main.contact form {
     margin-right: 50px;
     margin-left: 40px;
 }
 
-form>div {
+main.contact form>div {
     display: flex;
 }
 
-form>div:last-child {
+main.contact form>div:last-child {
     flex-direction: column;
     align-items: flex-end;
 }
 
-form>div>section:first-child {
+main.contact form>div>section:first-child {
     width: 50%;
 }
 
-form>div>section>label {
+main.contact form>div>section>label {
     margin: 13px 0px;
     display: block;
 }
 
-form>div>section>input {
+main.contact form>div>section>input {
     margin: 7px 0;
     display: block;
 }
 
-form textarea {
+main.contact form textarea {
     width: 100%;
     height: 75px;
 }
 
-form button {
+main.contact form button {
     margin-top: 5px;
     border-radius: 3px 6px 3px 3px;
     border: 1px solid rgb(121, 121, 121);
@@ -167,7 +167,7 @@ form button {
     direction: ltr;
 }
 
-form button:hover {
+main.contact form button:hover {
     background-image: linear-gradient(rgb(251, 228, 32), rgb(245, 153, 12));
     color: black;
 }

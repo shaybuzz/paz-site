@@ -276,6 +276,173 @@ main>article:nth-child(2)>section>div>img.advertisement {
     top: 50px;
 }
 
+
+/* contact style */
+
+main.contact {
+    width: 900px;
+    margin: auto;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main.contact h3 {
+    font-size: 15px;
+    margin: 0;
+    color: var(--blue);
+}
+
+main.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+main.contact p.bold {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+main.contact a:hover {
+    text-decoration: underline;
+    color: var(--blue);
+    ;
+}
+
+main.contact div.container {
+    width: fit-content;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+main.contact div.contact-data {
+    position: absolute;
+    top: -7px;
+    right: 0;
+    margin: 20px;
+}
+
+main.contact>div>article {
+    margin-top: 10px;
+}
+
+main.contact>div.nav {
+    width: 25%;
+}
+
+main.contact>div.nav>span {
+    background-image: url("images/side_menu_sprite.jpg");
+    display: block;
+    height: 40px;
+    width: 120px;
+}
+
+main.contact>div.nav>span>a {
+    position: relative;
+    top: 5px;
+    right: 20px;
+    font-size: 13px;
+}
+
+main.contact>div.main-form {
+    width: 50%;
+}
+
+main.contact>div.main-form>nav {
+    font-size: 12px;
+}
+
+main.contact>div.main-form>div.delim {
+    width: 100%;
+    height: 1px;
+    background-image: url("images/menu_dropdown_sep.png");
+}
+
+main.contact>div.main-form>p {
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+
+main.contact>div.info {
+    width: 35%;
+    padding-top: 60px;
+}
+
+main.contact>div.info>div.info-container {
+    position: relative;
+}
+
+main.contact>div.info>div.info-container>div.details {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    line-height: 2px;
+}
+
+main.contact>div.info>div.info-container>div.details>p>a {
+    color: blue;
+}
+
+main.contact>div.info>div.info-container:nth-child(2) {
+    margin-top: 25px;
+}
+
+main.contact>div.info>div.info-container>div.details>p:first-of-type {
+    margin-top: 25px;
+    font-weight: bolder;
+}
+
+main.contact form {
+    margin-right: 50px;
+    margin-left: 40px;
+}
+
+main.contact form>div {
+    display: flex;
+}
+
+main.contact form>div:last-child {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+main.contact form>div>section:first-child {
+    width: 50%;
+}
+
+main.contact form>div>section>label {
+    margin: 13px 0px;
+    display: block;
+}
+
+main.contact form>div>section>input {
+    margin: 7px 0;
+    display: block;
+}
+
+main.contact form textarea {
+    width: 100%;
+    height: 75px;
+}
+
+main.contact form button {
+    margin-top: 5px;
+    border-radius: 3px 6px 3px 3px;
+    border: 1px solid rgb(121, 121, 121);
+    padding: 1px 8px;
+    background-image: linear-gradient(rgb(150, 200, 255), rgb(62, 80, 185));
+    color: white;
+    direction: ltr;
+}
+
+main.contact form button:hover {
+    background-image: linear-gradient(rgb(251, 228, 32), rgb(245, 153, 12));
+    color: black;
+}
+
+
 /* footer */
 
 footer {
