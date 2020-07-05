@@ -20,11 +20,6 @@ body {
     right: 3px;
 }
 
-.margin-top {
-    position: relative;
-    top: 2px;
-}
-
 .flex-container {
     display: flex;
     justify-content: center;
@@ -43,13 +38,43 @@ body {
 }
 
 header {
-    height: 110px;
-    background: linear-gradient(0deg, rgba(166,166,166,1) 0%, rgba(122,122,122,1) 100%);
-    margin-bottom: 25px;
+    height: 105px;
+    background: linear-gradient(0deg, rgba(166, 166, 166, 1) 0%, rgba(170, 170, 170, 1) 2%, rgba(144, 144, 144, 1) 10%, rgba(146, 146, 146, 1) 100%);
+    margin-bottom: 20px;
+}
+
+header>div>aside {
+    width: fit-content;
+    padding-top: 20px;
+    display: flex;
+}
+
+header>div {
+    width: 900px;
+    margin: auto;
+    position: relative;
+}
+
+header>div>aside>div {
+    position: absolute;
+    left: 0px;
+    direction: ltr;
+    display: flex;
+}
+
+aside>div {
+    align-items: center;
+}
+
+/* logo */
+header>div>img {
+    position: absolute;
+    bottom: -20px;
 }
 
 nav {
     margin-top: 50px;
+    font-size: 15px;
 }
 
 nav>ul {
@@ -60,7 +85,7 @@ nav>ul {
 }
 
 nav>ul>li {
-    padding-bottom: 20px;
+    padding-bottom: 18px;
     position: relative;
 }
 
@@ -77,8 +102,7 @@ nav>ul>li>img {
 nav>ul>li>div.sub-menu {
     background-color: #909090;
     position: absolute;
-    top: 40px;
-    right: 0;
+    top: 35px;
     visibility: hidden;
     z-index: 10;
     box-shadow: -8px 7px 26px -8px rgba(0, 0, 0, 0.65);
@@ -94,6 +118,18 @@ nav>ul>li>div.sub-menu>a {
     padding: 5px;
 }
 
+header a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+}
+
+header a:hover {
+    color: var(--blue);
+    text-decoration: underline var(--blue);
+}
+
 nav>ul>li>div.sub-menu>a:first-child {
     background: linear-gradient(0deg, rgba(142, 144, 145, 1) 0%, rgba(171, 171, 171, 1) 100%);
 }
@@ -101,7 +137,6 @@ nav>ul>li>div.sub-menu>a:first-child {
 nav>ul>li>div.sub-menu>a:hover {
     background: #bcbcbc
 }
-
 
 main>article:first-child a>div.nextImage {
     background-image: url(images/read_more_white.png);
@@ -124,74 +159,6 @@ a>div.nextImage {
     top: 2px;
 }
 
-nav>section {
-    position: relative;
-}
-
-header nav>section>span {
-    position: absolute;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    top: 18px;
-    width: max-content;
-    visibility: hidden;
-}
-
-nav>section:hover>span {
-    visibility: visible;
-}
-
-nav>section>span>a {
-    background-color: #909090;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    display: inline;
-}
-
-
-header>div>aside {
-    width: fit-content;
-    padding-top: 20px;
-    display: flex;
-}
-
-header>div {
-    width: 900px;
-    margin: auto;
-    position: relative;
-}
-
-header nav.flex-container {
-    margin-top: 50px;
-    display: flex;
-    margin-right: 120px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header aside>div {
-    position: absolute;
-    left: 0px;
-    direction: ltr;
-    display: flex;
-}
-
-aside>div {
-    align-items: center;
-}
-
-header>div>img {
-    position: absolute;
-    right: -20px;
-    bottom: -30px;
-}
-
-#prev-menu {
-    visibility: hidden;
-}
-
 form>input {
     background: url(images/search_input.png) no-repeat;
     direction: rtl;
@@ -202,20 +169,6 @@ form>input {
     bottom: 5px;
     padding: 2px;
     left: -4px;
-}
-
-header a {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    position: relative;
-}
-
-header a:hover {
-    color: var(--blue);
-    text-decoration: underline var(--blue);
 }
 
 main>article>section {
@@ -340,7 +293,7 @@ main>article:nth-child(2)>section>div>img.map {
 
 footer {
     position: fixed;
-    background-image: url(images/footer_bg.png);
+    background: linear-gradient(0deg, rgba(144, 144, 144, 1) 66%, rgba(171, 171, 171, 1) 100%);
     bottom: 0;
     width: 100%;
     height: 35px;
@@ -352,7 +305,7 @@ footer>div {
 }
 
 footer>div>ul {
-    margin-top: 5px;
+    margin-top: 4px;
     padding: 0;
     display: flex;
     list-style: none;
