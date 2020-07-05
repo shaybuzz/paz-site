@@ -276,7 +276,6 @@ main>article:nth-child(2)>section>div>img.advertisement {
     top: 50px;
 }
 
-
 /* contact style */
 
 main.contact {
@@ -441,7 +440,6 @@ main.contact form button:hover {
     background-image: linear-gradient(rgb(251, 228, 32), rgb(245, 153, 12));
     color: black;
 }
-
 
 /* footer */
 
