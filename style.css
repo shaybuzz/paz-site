@@ -29,6 +29,37 @@ body {
     box-sizing: border-box;
 }
 
+article>nav>ul {
+    width: 100%;
+    list-style: none;
+    background-color: rgb(255, 145, 0);
+    display: flex;
+    justify-content: space-between;
+    padding-right: 130px;
+}
+
+article>nav>ul>li>img {
+    position: relative;
+    top: 2px;
+}
+
+article>nav>ul>li:hover , article>nav>ul>li>a:hover {
+    border: darkgreen 1px solid;
+
+}
+
+article>nav>ul>li{
+    background-color: darkmagenta;
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
+}
+
+.menu-sperator {
+    width: 1px;
+    background-color: #f1F1F1;
+    height: 100%;
+}
+
 main>article:first-child a>div.nextImage {
     background-image: url(images/read_more_white.png);
 }
@@ -54,7 +85,7 @@ nav>section {
     position: relative;
 }
 
-header nav>section> span {
+header nav>section>span {
     position: absolute;
     z-index: 10;
     display: flex;
@@ -64,11 +95,9 @@ header nav>section> span {
     visibility: hidden;
 }
 
-nav>section:hover> span {
+nav>section:hover>span {
     visibility: visible;
 }
-
-
 
 nav>section>span>a {
     background-color: #909090;
@@ -134,6 +163,10 @@ header>div>img {
     bottom: -30px;
 }
 
+#prev-menu{
+    visibility: hidden;
+}
+
 form>input {
     background: url(images/search_input.png) no-repeat;
     direction: rtl;
@@ -183,9 +216,8 @@ main>article>section>div>span {
     line-height: 1;
 }
 
-main>article:first-child>section>div>img+img {
-    position: absolute;
-    left: 0;
+main>article:first-child>section>div>img:first-child {
+    border-radius: 0 0 20px 0;
 }
 
 .pos-absolute {
