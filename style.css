@@ -165,6 +165,14 @@ main a>div.nextImage {
     top: 2px;
 }
 
+main>article>section {
+    margin: 7px;
+}
+
+main>article>section>div {
+    position: relative;
+}
+
 main>article>section>div a:hover {
     color: var(--blue);
 }
@@ -176,14 +184,6 @@ main>article:nth-child(2) a:hover>img {
 main>article:nth-child(2) a>img {
     padding-right: 4px;
     background-image: url(images/read_more_yellow.png) no-repeat;
-}
-
-main>article>section {
-    margin: 7px;
-}
-
-main>article>section>div {
-    position: relative;
 }
 
 main>article>section>div>span {
